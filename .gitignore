@@ -1,0 +1,13 @@
+# files
+*.pt
+*.ptl
+*.pdf
+*.png
+*.xlsx
+*.dat
+*.npz
+*.pyc
+*.csv
+
+# dirs
+dataset
