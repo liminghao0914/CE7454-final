@@ -10,4 +10,5 @@
 *.csv
 
 # dirs
-dataset
+dataset/IMDC_TrendData/*
+dataset/mini_alibaba/log/*
