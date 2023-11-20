@@ -188,7 +188,7 @@ class LowFidelityModel:
         self.model.compile("adam", lr=0)
         # import pdb; pdb.set_trace()
         # self.grad_xi = dde.grad.jacobian(net.outputs, net.inputs[0])
-        self.model.restore("deeponet_dr-1000.pt", verbose=1)
+        self.model.restore("saved/ckpts/dr/deeponet_dr-1000.pt", verbose=1)
 
     def __call__(self, X):
         return self.model.predict(X)
@@ -434,10 +434,10 @@ def main(args):
             # callbacks=[checkpointer],
             display_every=100
         )
-        model.save("mf_deeponet_dr")
+        model.save("saved/ckpts/dr/mf_deeponet_dr")
     elif args.mode == "test":
-        model_mf.model.restore(f"mf_deeponet_dr-{epochs}.pt", verbose=1)
-        model_low.model.restore(f"low_deeponet_dr-{800}.pt", verbose=1)
+        model_mf.model.restore(f"saved/ckpts/dr/mf_deeponet_dr-{epochs}.pt", verbose=1)
+        # model_low.model.restore(f"low_deeponet_dr-{800}.pt", verbose=1)
     # dde.postprocessing.save_loss_history(losshistory, "loss.dat")
     # test(model, model_low, func_space)
 
@@ -445,7 +445,7 @@ def main(args):
     # Function space
     func_space = dde.data.GRF(length_scale=0.2)
     
-    func_feats = func_space.random(1, 1)
+    func_feats = func_space.random(1, 16)
     xs = np.linspace(0, 1, num=100)[:, None]
     v = func_space.eval_batch(func_feats, xs)[0]
     x, t, u_true = solve_ADR(

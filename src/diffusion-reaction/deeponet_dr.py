@@ -57,12 +57,12 @@ def main(args):
         losshistory, train_state = model.train(iterations=epochs, display_every=10)
         dde.utils.plot_loss_history(losshistory)
         # save
-        model.save("deeponet_dr")
+        model.save("saved/ckpts/dr/deeponet_dr")
     elif args.mode == "test":
-        model.restore(f"deeponet_dr-{epochs}.pt")
+        model.restore(f"saved/ckpts/dr/deeponet_dr-{epochs}.pt")
 
     # Test
-    func_feats = func_space.random(1, 1)
+    func_feats = func_space.random(1, 16)
     xs = np.linspace(0, 1, num=100)[:, None]
     v = func_space.eval_batch(func_feats, xs)[0]
     x, t, u_true = solve_ADR(
