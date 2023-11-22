@@ -7,6 +7,7 @@
 *.npz
 *.pyc
 *.csv
+*.png
 
 # dirs
 dataset/IMDC_TrendData/*
