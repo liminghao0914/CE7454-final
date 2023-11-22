@@ -34,15 +34,11 @@ This repository contains all the necessary code, data samples, and documentation
 ## Getting Started
 To get started with our project, clone the repository and follow the instructions in our documentation. Ensure you have the necessary dependencies installed, as listed in `requirements.txt`.
 
-## Contributions
-We welcome contributions and suggestions to improve our project. Please feel free to submit issues and pull requests.
-
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-- Our sincere thanks to CE7454 course staff and participants.
-- Special thanks to all contributors and researchers whose works have inspired this project.
+- Thanks to Prof. LU's code at https://github.com/lu-group/multifidelity-deeponet
 
 ---
 For more detailed information and specific instructions, please refer to our project documentation and code comments.
