@@ -22,13 +22,13 @@ This repository contains all the necessary code, data samples, and documentation
 - `results/`: Output results and visualizations from our experiments.
 
 ## Visualizations
-![Predicted solution of three types of trained DeepONets in the test dataset. Data-A and Data-B are two random selected samples.](/results/3diffusion_reaction_don.png)
+![Predicted solution of three types of trained DeepONets in the test dataset. Data-A and Data-B are two random selected samples.](results\3diffusion_reaction_don.png)
 *Figure: Predicted solution of three types of trained DeepONets in the test dataset. Data-A and Data-B are two random selected samples.*
 
-![The interpolation (Figure 4a, Figure 4b) and extrapola-tion (Figure 4c, Figure 4d) performance analysis of multifidelity-DeepONet, where we set α = 0.5.](/results/comparison.png)
+![The interpolation (Figure 4a, Figure 4b) and extrapola-tion (Figure 4c, Figure 4d) performance analysis of multifidelity-DeepONet, where we set α = 0.5.](results/comparison.png)
 *Figure: Performance comparison between Multifidelity-DeepONet and standard DeepONet models.*
 
-![Poisson equation: Source term f(x) and solution u(x)](/results/poisson.png)
+![Poisson equation: Source term f(x) and solution u(x)](results/poisson.png)
 *Figure: Learning poison equation with two types of dataset (small-range high-fidelity dataset and large-range low-fidelity dataset) for Normal and Multi-fidelity DeepONet.*
 
 ## Getting Started
