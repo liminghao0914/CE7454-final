@@ -2,7 +2,6 @@
 *.pt
 *.ptl
 *.pdf
-*.png
 *.xlsx
 *.dat
 *.npz
